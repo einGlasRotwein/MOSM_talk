@@ -1,5 +1,7 @@
 # Reproducible Manuscripts - Mannheim Open Science Meetup
 
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/einGlasRotwein/MOSM_talk/master?filepath=00reproducible_manuscripts.Rmd&urlpath=rstudio)
+
 Primer on **reproducible manuscripts** at the Mannheim Open Science Meetup on 27th March 2020, 5:30 pm (GMT +02:00).
 
 ## Mannheim Open Science Meetup
