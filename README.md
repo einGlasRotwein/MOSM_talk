@@ -18,4 +18,15 @@ Don’t worry: We will also discuss how it will save you time and effort when wr
 Due to the Corona situation, we will hold this Meetup online.
 This will make it harder to maintain the informal get-together we have had at the end of each meeting.
 On the other side, a virtual meeting might make it easier to integrate the Meetup into our daily lives and facilitate attendance for colleagues beyond Mannheim. 
-Send me a dm for the Zoom link.
+Participate on Zoom:
+
+Wednesday, May 27th
+5.30 pm
+Zoom Link: 
+https://us02web.zoom.us/j/84629052932?pwd=blh3WlZESXhva3l0dkh5ejRVVzQ2UT09
+
+Meeting-ID: 
+846 2905 2932
+
+Password: 
+open
