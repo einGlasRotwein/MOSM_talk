@@ -1,0 +1,143 @@
+---
+title: "Reproducible Manuscripts in R Markdown"
+author: "Juli Tkotz"
+date: 27-05-2020
+institute: "ZI Mannheim, RG Psychology and Neurobiology of Sleep and Memory"
+bibliography: ["rep_manuscripts.bib"]
+output: binb::metropolis
+---
+
+```{r setup, include = FALSE}
+library(knitr)
+library(prmisc)
+library(effsize)
+library(tidyverse)
+
+julis_theme <- theme(legend.position = "top", 
+                     plot.title = element_text(size = 22, hjust = 0.5),
+                     plot.subtitle = element_text(hjust = 0.5),
+                     axis.title = element_text(size = 22),
+                     axis.text = element_text(size = 18),
+                     axis.line = element_line(colour = "black"),
+                     legend.text = element_text(size = 20), 
+                     legend.title = element_text(size = 20),
+                     panel.background = element_blank(),
+                     panel.grid = element_blank(),
+                     strip.background = element_rect(fill = NA, size = 1),
+                     strip.text = element_text(size = 20))
+
+opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE, fig.align = 'center', out.width = '80%')
+```
+
+## What is a reproducible manuscript?
+
+- A manuscript that directly embeds your **research data** and **analysis code**.
+- Any person with the raw data can run the code and **reproduce** your manuscript.
+- Interactive stand-alone versions are possible.
+
+## Beyond reproducible analyses
+
+```{r copy_paste_hell}
+include_graphics("./pics/copy_paste_hell.png")
+```
+
+## R Markdown to the rescue
+
+```{r intext_stats}
+nerd <- read.csv("./data/nerd.csv", sep = "\t")
+```
+
+```{r slide_inception, out.width = '90%'}
+include_graphics("./pics/slide_inception.png")
+```
+
+This example dataset consists of $N =$ `r nrow(nerd)` participants with an age range between `r min(nerd[["age"]])` and `r max(nerd[["age"]])` years.
+Overall, `r sum(nerd$age > 100)` participants reported to be older than 100, so we probably can't trust this data set a lot.
+
+\tiny
+Data retrieved from https://openpsychometrics.org/
+\normalsize
+
+## R Markdown to the rescue
+
+```{r slide_inception_bold, out.width = '90%'}
+include_graphics("./pics/slide_inception.png")
+```
+
+This example dataset consists of **$N =$ `r nrow(nerd)`** participants with an age range between **`r min(nerd[["age"]])`** and **`r max(nerd[["age"]])`** years.
+Overall, **`r sum(nerd$age > 100)`** participants reported to be older than 100, so we probably can't trust this data set a lot.
+
+## How about some stats?
+
+```{r t_test_prep}
+nerd[["sum_score"]] <- rowSums(nerd[paste0("Q", 1:26)])
+nerd <- nerd[nerd[["gender"]] %in% 1:2, ]
+nerd[["gender"]] <- factor(nerd[["gender"]], levels = 1:2, labels = c("male", "female"))
+```
+
+\footnotesize
+
+```{r t_test, echo = TRUE}
+nerd_ttest <- t.test(sum_score ~ gender, data = nerd)
+nerd_effsize <- cohen.d(sum_score ~ gender, data = nerd)
+```
+
+\normalsize
+
+```{r t_test_screenshot, out.width = '100%'}
+include_graphics("./pics/ttest.png")
+```
+
+In this dataset, men `r print_mean_sd(nerd[["sum_score"]][nerd[["gender"]] == "male"])` have a significantly lower nerd score than women `r print_mean_sd(nerd[["sum_score"]][nerd[["gender"]] == "female"])`, `r print_ttest(nerd_ttest, nerd_effsize)`.
+
+## Yeah, plots!
+
+```{r density_plot, out.width = '90%'}
+nerd %>% 
+  ggplot(aes(x = sum_score, fill = gender)) +
+  geom_density(alpha = .5, binwidth = 2, position = "identity", size = 1) +
+  scale_fill_manual(values = c("#eb811b", "#23373b")) +
+  scale_x_continuous(breaks = seq(0, 140, 35),
+                     limits = c(0, 140)) +
+  labs(x = "nerdy sum score") +
+  julis_theme
+```
+
+## Yeah, references!
+
+```{r citation}
+include_graphics("./pics/citation.png")
+```
+
+If I want to cite a paper, I can do this [@san_martin_1968].
+This also works if I cite @san_martin_1968 as an in-text citation.
+
+## How to get bibtex references
+
+```{r get_bibtex}
+include_graphics("./pics/alpaca_citation.png")
+```
+
+## Fully formatted articles
+
+The `R`-packaga `papaja` offers you documents that are formatted according to APA (6) style.
+
+\tiny
+https://github.com/crsh/papaja
+\normalsize
+
+```{r papaja}
+include_graphics("./pics/papaja.png")
+```
+
+## Talking about reproducibility ...
+
+```{r missing_package}
+include_graphics("./pics/anticlust_error.png")
+```
+
+## Code capsules
+
+On Code Ocean.
+
+## References
