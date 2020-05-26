@@ -181,11 +181,19 @@ include_graphics("./pics/anticlust_error.png")
 include_graphics("./pics/code_ocean.png")
 ```
 
+\small
+[CodeOcean](https://codeocean.com/)
+\normalsize
+
 ## Code capsules
 
 ```{r binder, out.width = '100%'}
 include_graphics("./pics/binder.png")
 ```
+
+\small
+[Binder](https://github.com/rocker-org/binder)
+\normalsize
 
 ## There will be pain
 
