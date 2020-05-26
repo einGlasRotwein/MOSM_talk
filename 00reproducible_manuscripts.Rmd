@@ -5,6 +5,7 @@ date: 27-05-2020
 institute: "ZI Mannheim, RG Psychology and Neurobiology of Sleep and Memory"
 bibliography: ["rep_manuscripts.bib"]
 output: binb::metropolis
+urlcolor: orange
 ---
 
 ```{r setup, include = FALSE}
@@ -180,13 +181,15 @@ include_graphics("./pics/anticlust_error.png")
 include_graphics("./pics/code_ocean.png")
 ```
 
-\tiny
-https://codeocean.com/capsule/3923848/tree/v1
-\normalsize
+## Code capsules
+
+```{r binder, out.width = '100%'}
+include_graphics("./pics/binder.png")
+```
 
 ## There will be pain
 
-```{r pain}
+```{r pain, out.width = '100%'}
 include_graphics("./pics/pain.png")
 ```
 
@@ -201,8 +204,18 @@ include_graphics("./pics/pain.png")
 
 Find this presentation on [GitHub](https://github.com/einGlasRotwein/MOSM_talk).
 
+```{r find_binder, out.width = '40%'}
+include_graphics("./pics/binder2.png")
+```
+
+And definitely check the binder button! Thank you, Philipp Zumstein!
+
 Or on [CodeOcean](https://codeocean.com/capsule/3923848/tree/v1).
 
 Or on the [OSF](https://osf.io/gzf9h/).
 
 ## References
+\setlength{\parindent}{-0.2in}
+\setlength{\leftskip}{0.2in}
+\setlength{\parskip}{8pt}
+\noindent
