@@ -32,3 +32,10 @@ Meeting-ID:
 
 Password: 
 open
+
+## Code Capsule
+If you found this repository, you already found the `.Rmd` that renders the whole presentation.
+However, if you don't want to install all the packages needed to render the presentation, click the binder button at the top of this README.
+It will open RStudio in your browser, without the need to install anything.
+If you want, you can open `00reproducible_manuscripts.Rmd` in the Files pane on the bottom right corner and then click the little "Knit" button (the icon is a blue ball of yarn) that then appears in the menu bar above the file.
+Thank you [Philipp Zumstein](https://github.com/zuphilip) for setting up the whole binder thingy!
