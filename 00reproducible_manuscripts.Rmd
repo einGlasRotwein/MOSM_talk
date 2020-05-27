@@ -222,8 +222,16 @@ Or on [CodeOcean](https://codeocean.com/capsule/3923848/tree/v1).
 
 Or on the [OSF](https://osf.io/gzf9h/).
 
+## Useful Ressources
+
+- [Tutorial for a reproducible workflow](https://psyarxiv.com/8xzqy/) with R Markdown, Git, Make and Docker by @peikert_brandmaier_2019
+- [Example capsule](https://t.co/icY9wPvJgI?amp=1) for papaja on CodeOcean (also see the [papaja manual](https://crsh.github.io/papaja_man/) and give [Frederik Aust](https://twitter.com/FrederikAust) a cookie)
+- The computational reproducibility part (week 5) of Daniel Laken's coursera course ["Improving Statistical Questions"](https://www.coursera.org/learn/improving-statistical-questions)
+- R Markdown - [The Definitive Guide](https://bookdown.org/yihui/rmarkdown/) by Yihui Xie, J. J. Allaire and Garrett Grolemund
+
 ## References
 \setlength{\parindent}{-0.2in}
 \setlength{\leftskip}{0.2in}
 \setlength{\parskip}{8pt}
 \noindent
+\small
