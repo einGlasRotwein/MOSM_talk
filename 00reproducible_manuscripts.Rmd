@@ -96,6 +96,22 @@ include_graphics("./pics/slide_inception.png")
 This example dataset consists of **$N =$ `r nrow(nerd)`** participants with an age range between **`r min(nerd[["age"]])`** and **`r max(nerd[["age"]])`** years.
 Overall, **`r sum(nerd$age > 100)`** participants reported to be older than 100, so we probably can't trust this data set a lot.
 
+## Detecting errors
+
+```{r woops}
+include_graphics("./pics/copy_paste_hell2.png")
+```
+
+Wait a minute ...
+
+## Detecting errors
+
+```{r found_it}
+include_graphics("./pics/woops.png")
+```
+
+There it is!
+
 ## How about some stats?
 
 ```{r t_test_prep}
@@ -149,7 +165,7 @@ include_graphics("./pics/alpaca_citation.png")
 
 ## Fully formatted articles
 
-The `R`-packaga `papaja` offers you documents that are formatted according to APA (6) style.
+The `R`-package `papaja` offers you documents that are formatted according to APA (6) style.
 
 \tiny
 https://github.com/crsh/papaja
