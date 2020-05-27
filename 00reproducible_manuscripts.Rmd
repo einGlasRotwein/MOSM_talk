@@ -234,7 +234,7 @@ include_graphics("./pics/binder2.png")
 
 And definitely check the binder button! Thank you, Philipp Zumstein!
 
-Or on [CodeOcean](https://codeocean.com/capsule/3923848/tree/v1).
+Or on [CodeOcean](https://doi.org/10.24433/CO.3923848.v1).
 
 Or on the [OSF](https://osf.io/gzf9h/).
 
