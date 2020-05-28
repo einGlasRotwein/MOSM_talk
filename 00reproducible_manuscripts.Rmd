@@ -245,6 +245,18 @@ Or on the [OSF](https://osf.io/gzf9h/).
 - The computational reproducibility part (week 5) of Daniel Laken's coursera course ["Improving Statistical Questions"](https://www.coursera.org/learn/improving-statistical-questions)
 - R Markdown - [The Definitive Guide](https://bookdown.org/yihui/rmarkdown/) by Yihui Xie, J. J. Allaire and Garrett Grolemund
 
+## Questions
+
+- Collaborative writing?
+- Journals?
+- Why not only code?
+
+## Collaborative writing
+
+Here is an example of how I am editing this slide.
+I made a typo hero.
+In the commit history, you can see how I fixed it.
+
 ## References
 \setlength{\parindent}{-0.2in}
 \setlength{\leftskip}{0.2in}
