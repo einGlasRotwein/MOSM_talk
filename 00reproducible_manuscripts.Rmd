@@ -254,7 +254,7 @@ Or on the [OSF](https://osf.io/gzf9h/).
 ## Collaborative writing
 
 Here is an example of how I am editing this slide.
-I made a typo hero.
+I made a typo here.
 In the commit history, you can see how I fixed it.
 
 ## References
