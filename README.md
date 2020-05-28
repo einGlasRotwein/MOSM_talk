@@ -1,6 +1,6 @@
 # Reproducible Manuscripts - Mannheim Open Science Meetup
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/einGlasRotwein/MOSM_talk/master?filepath=00reproducible_manuscripts.Rmd&urlpath=rstudio)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/einGlasRotwein/MOSM_talk/master?filepath=00reproducible_manuscripts.Rmd&urlpath=rstudio) -- [CodeOcean capsule](https://doi.org/10.24433/CO.3923848.v2)
 
 Primer on **reproducible manuscripts** at the Mannheim Open Science Meetup on 27th March 2020, 5:30 pm (GMT +02:00).
 
@@ -33,9 +33,15 @@ Meeting-ID:
 Password: 
 open
 
-## Code Capsule
+## Code Capsules
 If you found this repository, you already found the `.Rmd` that renders the whole presentation.
-However, if you don't want to install all the packages needed to render the presentation, click the binder button at the top of this README.
+However, if you don't want to install all the packages needed to render the presentation, you have two options.
+
+## binder
+Click the binder button at the top of this README.
 It will open RStudio in your browser, without the need to install anything.
 If you want, you can open `00reproducible_manuscripts.Rmd` in the Files pane on the bottom right corner and then click the little "Knit" button (the icon is a blue ball of yarn) that then appears in the menu bar above the file.
 Thank you [Philipp Zumstein](https://github.com/zuphilip) for setting up the whole binder thingy!
+
+## CodeOcean
+Likewise, you can find the code capsule of this talk on [CodeOcean](https://doi.org/10.24433/CO.3923848.v2). Again, you can run the capsule in your browser - if you want to, you can launch an RStudio environment. You can also just inspect the output of the last run (i.e. the PDF).
